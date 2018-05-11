@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Test" xml:space="preserve">
+    <value>Test 1</value>
+  </data>
+  <data name="ConnectionError1" xml:space="preserve">
+    <value>Please turn on your internet settings.</value>
+  </data>
+  <data name="ConnectionError2" xml:space="preserve">
+    <value>Check you internet connection.</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="EMail" xml:space="preserve">
+    <value>EMail</value>
+  </data>
+  <data name="EmailPlaceHolder" xml:space="preserve">
+    <value>Enter your email...</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PasswordPlaceHolder" xml:space="preserve">
+    <value>Enter your password...</value>
+  </data>
+  <data name="Rememberme" xml:space="preserve">
+    <value>Remember me on this device</value>
+  </data>
+  <data name="Forgot" xml:space="preserve">
+    <value>Forgot your password?</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="MyProfile" xml:space="preserve">
+    <value>My profile</value>
+  </data>
+  <data name="Boards" xml:space="preserve">
+    <value>Boards</value>
+  </data>
+  <data name="Predictions" xml:space="preserve">
+    <value>Predictions</value>
+  </data>
+  <data name="Ranking" xml:space="preserve">
+    <value>Ranking</value>
+  </data>
+  <data name="Instructions" xml:space="preserve">
+    <value>Instructions</value>
+  </data>
+  <data name="LogOut" xml:space="preserve">
+    <value>LogOut</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="PasswordValidation" xml:space="preserve">
+    <value>You must enter a password.</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>Accept</value>
+  </data>
+  <data name="PasswordValidation2" xml:space="preserve">
+    <value>The password must have at least 6 characters.</value>
+  </data>
+  <data name="PasswordError" xml:space="preserve">
+    <value>The current password is incorrect.</value>
+  </data>
+  <data name="ConfirmValidation" xml:space="preserve">
+    <value>You must enter a password confirm.</value>
+  </data>
+  <data name="ConfirmValidation2" xml:space="preserve">
+    <value>The new password and the confirm, does not match.</value>
+  </data>
+  <data name="ErrorChangingPassword" xml:space="preserve">
+    <value>The password can't be changed, please try again.</value>
+  </data>
+  <data name="ChagePasswordConfirm" xml:space="preserve">
+    <value>Your password was changed.</value>
+  </data>
+  <data name="EmailValidation" xml:space="preserve">
+    <value>You must enter an email.</value>
+  </data>
+  <data name="SomethingWrong" xml:space="preserve">
+    <value>Something was wrong, please try later.</value>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>The email or password is incorrect.</value>
+  </data>
+  <data name="MyHits" xml:space="preserve">
+    <value>My hits</value>
+  </data>
+  <data name="FirstNameValidation" xml:space="preserve">
+    <value>You must enter a first name.</value>
+  </data>
+  <data name="LastNameValidation" xml:space="preserve">
+    <value>You must enter a last name.</value>
+  </data>
+  <data name="EmailValidation2" xml:space="preserve">
+    <value>You must enter a valid email.</value>
+  </data>
+  <data name="PhoneValidation" xml:space="preserve">
+    <value>You must enter a phone number.</value>
+  </data>
+  <data name="UserRegisteredMessage" xml:space="preserve">
+    <value>The user was create, now you can login with this email and password.</value>
+  </data>
+  <data name="SourceImageQuestion" xml:space="preserve">
+    <value>Where do you want to take the image?</value>
+  </data>
+  <data name="FromGallery" xml:space="preserve">
+    <value>From gallery</value>
+  </data>
+  <data name="FromCamera" xml:space="preserve">
+    <value>From camera</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Change password</value>
+  </data>
+  <data name="CurrentPassword" xml:space="preserve">
+    <value>Current password</value>
+  </data>
+  <data name="CurrentPasswordPlaceHolder" xml:space="preserve">
+    <value>Enter current password...</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>New password</value>
+  </data>
+  <data name="NewPasswordPlaceHolder" xml:space="preserve">
+    <value>Enter new password...</value>
+  </data>
+  <data name="ConfirmLabel" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="ConfirmPlaceHolder" xml:space="preserve">
+    <value>Enter password confirm...</value>
+  </data>
+  <data name="Matches" xml:space="preserve">
+    <value>Matches</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="RegisterTitle" xml:space="preserve">
+    <value>Register new user</value>
+  </data>
+  <data name="ChangeImage" xml:space="preserve">
+    <value>Touch image to change it.</value>
+  </data>
+  <data name="FirstNameLabel" xml:space="preserve">
+    <value>First name</value>
+  </data>
+  <data name="FirstNamePlaceHolder" xml:space="preserve">
+    <value>Enter first name...</value>
+  </data>
+  <data name="LastNameLabel" xml:space="preserve">
+    <value>Last name</value>
+  </data>
+  <data name="LastNamePlaceHolder" xml:space="preserve">
+    <value>Enter last name...</value>
+  </data>
+  <data name="PhoneLabel" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="PhonePlaceHolder" xml:space="preserve">
+    <value>Enter phone...</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="NoUserLocalMessage" xml:space="preserve">
+    <value>This option is only available for local users.</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="BoardInstructions" xml:space="preserve">
+    <value>To participate you must acquire cards</value>
+  </data>
+  <data name="YourCurrentBoards" xml:space="preserve">
+    <value>Your current boards:</value>
+  </data>
+  <data name="NoVerified" xml:space="preserve">
+    <value>No verified</value>
+  </data>
+  <data name="Verified" xml:space="preserve">
+    <value>Verified</value>
+  </data>
+  <data name="AddBoard" xml:space="preserve">
+    <value>Add board</value>
+  </data>
+  <data name="AddBoardInstructions" xml:space="preserve">
+    <value>You must adquire at least one card to participate.</value>
+  </data>
+  <data name="NoDepositImageMessage" xml:space="preserve">
+    <value>You must add an image for the deposit.</value>
+  </data>
+  <data name="DepositConfirmationMessage" xml:space="preserve">
+    <value>The image of his cardboard was received. When the administrator verifies it within 24 hours, he will enable his cardboard to enter the predictions.</value>
+  </data>
+  <data name="ContactAdmin" xml:space="preserve">
+    <value>If you have any questions, you can write to: jzuluaga55@gmail.com or call the number +57 350 634 2747.</value>
+  </data>
+  <data name="Board" xml:space="preserve">
+    <value>Board</value>
+  </data>
+  <data name="SelectBoard" xml:space="preserve">
+    <value>Select a board...</value>
+  </data>
+  <data name="PredictionInstructions" xml:space="preserve">
+    <value>You must have purchased boards and these must be enabled by the administrator.</value>
+  </data>
+  <data name="SavePredictions" xml:space="preserve">
+    <value>Save prediction</value>
+  </data>
+  <data name="SelectBoardValidation" xml:space="preserve">
+    <value>You must select a board.</value>
+  </data>
+  <data name="EditPrediction" xml:space="preserve">
+    <value>Edit prediction</value>
+  </data>
+  <data name="LocalGoalsValidation" xml:space="preserve">
+    <value>You must enter local goals</value>
+  </data>
+  <data name="VisitorGoalsValidation" xml:space="preserve">
+    <value>You must enter visitor goals</value>
+  </data>
+  <data name="ErrorSavingPredictionMessage" xml:space="preserve">
+    <value>An error has occurred, please try again.</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="Image" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="Points" xml:space="preserve">
+    <value>Points</value>
+  </data>
+  <data name="MyPrediction" xml:space="preserve">
+    <value>My prediction</value>
+  </data>
+  <data name="Instructions1" xml:space="preserve">
+    <value>To play "Russia" follow the next instructions:</value>
+  </data>
+  <data name="Instructions2" xml:space="preserve">
+    <value>1. In the "Cardboards" menu, purchase one or more cartons.</value>
+  </data>
+  <data name="Instructions3" xml:space="preserve">
+    <value>2. Enter the predictions of each match. You can enter the prediction before starting each game. If you guess the exact result, you will earn 3 points. If you guess the winner or tie with another result you will earn 1 point.</value>
+  </data>
+  <data name="Instructions4" xml:space="preserve">
+    <value>Example: if for the Colombia - Japan match, you place 2-1, and effectively this result is given, you win 3 points. If Colombia wins by another result, for example: 1-0, 2-0, 3-1, or another, you win 1 point. But if Colombia ties or loses, you do not earn points.</value>
+  </data>
+  <data name="Instructions5" xml:space="preserve">
+    <value>3. Win the most points accumulate in the entire tournament. You can check your position in the Classification menu.</value>
+  </data>
+  <data name="NotImplement" xml:space="preserve">
+    <value>Option not implemented yet. Comming soon in next version!</value>
+  </data>
+  <data name="Instructions6" xml:space="preserve">
+    <value>In the remote case that two or more users have the same score. The prize will be distributed among all the winners.</value>
+  </data>
+  <data name="PleaseWait" xml:space="preserve">
+    <value>Please wait...</value>
+  </data>
+  <data name="UserAlreadyExists" xml:space="preserve">
+    <value>Another user exists with the same email.</value>
+  </data>
+  <data name="RegisterUserError" xml:space="preserve">
+    <value>The user can't be created, please try latter.</value>
+  </data>
+  <data name="PasswordRetrieve" xml:space="preserve">
+    <value>Password retrieve</value>
+  </data>
+  <data name="PasswordRetrieveExplanation" xml:space="preserve">
+    <value>Please enter the registered email, to send a new password.</value>
+  </data>
+  <data name="SendNewPassword" xml:space="preserve">
+    <value>Send new password</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="NewPasswordSent" xml:space="preserve">
+    <value>Your new password has been sent, check the new password in your email.</value>
+  </data>
+  <data name="Instructions41" xml:space="preserve">
+    <value>Note: in the case of games that are defined by penalties, the prediction is made only for the regular game time. I mean before the penalties.</value>
+  </data>
+  <data name="ChangePasswordInstructions" xml:space="preserve">
+    <value>For your safety, you must exit and enter the App before changing your password.</value>
+  </data>
+  <data name="SocialNetworksLogin" xml:space="preserve">
+    <value>Or login with...</value>
+  </data>
+  <data name="CupProgramming" xml:space="preserve">
+    <value>Cup Programming</value>
+  </data>
+  <data name="PendingMatches" xml:space="preserve">
+    <value>Pending Matches</value>
+  </data>
+  <data name="PastMatches" xml:space="preserve">
+    <value>Past Matches</value>
+  </data>
+  <data name="EnterAsAGuest" xml:space="preserve">
+    <value>Enter as a guest</value>
+  </data>
+  <data name="Invited" xml:space="preserve">
+    <value>Invited</value>
+  </data>
+  <data name="GuestValidation" xml:space="preserve">
+    <value>You have entered as a guest, in order to access this option you must register and access the application.</value>
+  </data>
+  <data name="MatchAboutToFinish" xml:space="preserve">
+    <value>is about to close the predictions and you have not yet entered yours.</value>
+  </data>
+  <data name="PredictionsCloseMatches" xml:space="preserve">
+    <value>Predictions close matches</value>
+  </data>
+  <data name="ClosePredictions" xml:space="preserve">
+    <value>You have closed your predictions, you can see the predictions of all the users in the menu:</value>
+  </data>
+  <data name="SelectMatch" xml:space="preserve">
+    <value>Select a match...</value>
+  </data>
+  <data name="LocalGoals" xml:space="preserve">
+    <value>Local</value>
+  </data>
+  <data name="VisitorGoals" xml:space="preserve">
+    <value>Visitor</value>
+  </data>
+  <data name="Points3" xml:space="preserve">
+    <value>It's finished, congratulations! you have won 3 points</value>
+  </data>
+  <data name="Points1" xml:space="preserve">
+    <value>It's finished, congratulations! You have gained 1 point</value>
+  </data>
+  <data name="Points0" xml:space="preserve">
+    <value>It's over, I'm sorry, you have not earned points</value>
+  </data>
+  <data name="Prize" xml:space="preserve">
+    <value>Prize</value>
+  </data>
+  <data name="NoPredictionsClose" xml:space="preserve">
+    <value>There are no closed predictions. Return to this option when you start the tournament.</value>
+  </data>
+</root>

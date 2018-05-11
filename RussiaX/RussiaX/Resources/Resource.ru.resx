@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Test" xml:space="preserve">
+    <value>Проверка</value>
+  </data>
+  <data name="ConnectionError1" xml:space="preserve">
+    <value>Пожалуйста, включите ваши настройки Интернет.</value>
+  </data>
+  <data name="ConnectionError2" xml:space="preserve">
+    <value>Проверьте интернет-соединение.</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Вход</value>
+  </data>
+  <data name="EmailPlaceHolder" xml:space="preserve">
+    <value>Введите свой адрес электронной почты</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Пароль:</value>
+  </data>
+  <data name="PasswordPlaceHolder" xml:space="preserve">
+    <value>Введите пароль.</value>
+  </data>
+  <data name="Rememberme" xml:space="preserve">
+    <value>Запомнить меня на этом устройстве</value>
+  </data>
+  <data name="Forgot" xml:space="preserve">
+    <value>Забыли пароль?</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Подключить...</value>
+  </data>
+  <data name="MyProfile" xml:space="preserve">
+    <value>Мой профиль</value>
+  </data>
+  <data name="Boards" xml:space="preserve">
+    <value>платы</value>
+  </data>
+  <data name="Predictions" xml:space="preserve">
+    <value>Стандартные прогнозы</value>
+  </data>
+  <data name="Ranking" xml:space="preserve">
+    <value>Рейтинг</value>
+  </data>
+  <data name="Instructions" xml:space="preserve">
+    <value>инструкции</value>
+  </data>
+  <data name="LogOut" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="PasswordValidation" xml:space="preserve">
+    <value>Необходимо ввести пароль.</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>Принять</value>
+  </data>
+  <data name="PasswordError" xml:space="preserve">
+    <value>Введен неверный пароль, или администратор удалил вашу учетную запись.</value>
+  </data>
+  <data name="ChagePasswordConfirm" xml:space="preserve">
+    <value>Ваш пароль изменен</value>
+  </data>
+  <data name="EmailValidation" xml:space="preserve">
+    <value>Необходимо ввести адрес электронной почты в этом формате:</value>
+  </data>
+  <data name="EmailValidation2" xml:space="preserve">
+    <value>Введите допустимый адрес электронной почты.</value>
+  </data>
+  <data name="PhoneValidation" xml:space="preserve">
+    <value>Чтобы зарегистрировать учетную запись многофакторной проверки подлинности в Интернете, введите номер телефона, относящегося к одной из &amp;lt;a href='/reports/global_rates_report?public=1' target='blank'&amp;gt;36 стран с бесплатным покрытием&amp;lt;/a&amp;gt;. Многофакторная проверка подлинности работает по всему миру, но при этом дополнительно может взиматься плата за глобальные услуги. Для получения дополнительных сведений о глобальных службах или зарегистрироваться свяжитесь со службой продаж многофакторной проверки подлинности.</value>
+  </data>
+  <data name="FromGallery" xml:space="preserve">
+    <value>Из коллекции</value>
+  </data>
+  <data name="FromCamera" xml:space="preserve">
+    <value>Прикрепить изображение с камеры</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Смена пароля</value>
+  </data>
+  <data name="CurrentPassword" xml:space="preserve">
+    <value>Текущий пароль</value>
+  </data>
+  <data name="CurrentPasswordPlaceHolder" xml:space="preserve">
+    <value>Введите текущий пароль</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>Новый пароль:</value>
+  </data>
+  <data name="NewPasswordPlaceHolder" xml:space="preserve">
+    <value>Введите новый пароль</value>
+  </data>
+  <data name="ConfirmLabel" xml:space="preserve">
+    <value>Подтверждение</value>
+  </data>
+  <data name="Matches" xml:space="preserve">
+    <value>Соответствия</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>Меню</value>
+  </data>
+  <data name="FirstNameLabel" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="LastNameLabel" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="PhoneLabel" xml:space="preserve">
+    <value>Телефон</value>
+  </data>
+  <data name="PhonePlaceHolder" xml:space="preserve">
+    <value>Ввести номер телефона:</value>
+  </data>
+  <data name="PasswordValidation2" xml:space="preserve">
+    <value>Пароль должен состоять хотя бы из 6 символов.</value>
+  </data>
+  <data name="ConfirmValidation" xml:space="preserve">
+    <value>Вы должны ввести тот же пароль.</value>
+  </data>
+  <data name="ConfirmValidation2" xml:space="preserve">
+    <value>Пароль и подтверждение не совпадают.</value>
+  </data>
+  <data name="ErrorChangingPassword" xml:space="preserve">
+    <value>Пароль не может быть изменен, повторите попытку.</value>
+  </data>
+  <data name="SomethingWrong" xml:space="preserve">
+    <value>Что-то пошло не так, повторите попытку позже.</value>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Email или пароль указан неверно.</value>
+  </data>
+  <data name="MyHits" xml:space="preserve">
+    <value>Mой!</value>
+  </data>
+  <data name="FirstNameValidation" xml:space="preserve">
+    <value>Вы должны ввести имя</value>
+  </data>
+  <data name="LastNameValidation" xml:space="preserve">
+    <value>Необходимо указать Фамилию.</value>
+  </data>
+  <data name="UserRegisteredMessage" xml:space="preserve">
+    <value>Пользователь был создан, теперь вы можете входить в систему с этим адресом электронной почты и паролем.!</value>
+  </data>
+  <data name="SourceImageQuestion" xml:space="preserve">
+    <value>Куда мы едем?</value>
+  </data>
+  <data name="ConfirmPlaceHolder" xml:space="preserve">
+    <value>Введите пароль</value>
+  </data>
+  <data name="RegisterTitle" xml:space="preserve">
+    <value>Регистрация нового пользователя</value>
+  </data>
+  <data name="ChangeImage" xml:space="preserve">
+    <value>Для изменения:</value>
+  </data>
+  <data name="FirstNamePlaceHolder" xml:space="preserve">
+    <value>Введите имя</value>
+  </data>
+  <data name="LastNamePlaceHolder" xml:space="preserve">
+    <value>Введите фамилию</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="NoUserLocalMessage" xml:space="preserve">
+    <value>Эта опция доступна только в булевых регистрах.</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="YourCurrentBoards" xml:space="preserve">
+    <value>Ваш текущий доски:</value>
+  </data>
+  <data name="NoVerified" xml:space="preserve">
+    <value>Нет достоверности</value>
+  </data>
+  <data name="Verified" xml:space="preserve">
+    <value>Проверено</value>
+  </data>
+  <data name="AddBoard" xml:space="preserve">
+    <value>Добавить альбом</value>
+  </data>
+  <data name="NoDepositImageMessage" xml:space="preserve">
+    <value>Вы должны добавить изображение для сдачи на хранение.</value>
+  </data>
+  <data name="ContactAdmin" xml:space="preserve">
+    <value>Если у вас есть какие-либо вопросы, вы можете написать на: jzuluaga55@gmail.com или по телефону номер +57 350 634 2747.</value>
+  </data>
+  <data name="Board" xml:space="preserve">
+    <value>Доска</value>
+  </data>
+  <data name="SelectBoard" xml:space="preserve">
+    <value>Выберите...</value>
+  </data>
+  <data name="PredictionInstructions" xml:space="preserve">
+    <value>Вы должны приобрести доски, и они должны быть активированы администратором.</value>
+  </data>
+  <data name="SelectBoardValidation" xml:space="preserve">
+    <value>Вы должны выбрать плату.</value>
+  </data>
+  <data name="EditPrediction" xml:space="preserve">
+    <value>прогноз</value>
+  </data>
+  <data name="SavePredictions" xml:space="preserve">
+    <value>прогноз</value>
+  </data>
+  <data name="LocalGoalsValidation" xml:space="preserve">
+    <value>Вы должны ввести цели в помещение.</value>
+  </data>
+  <data name="VisitorGoalsValidation" xml:space="preserve">
+    <value>Вы должны ввести цели для посетителя.</value>
+  </data>
+  <data name="ErrorSavingPredictionMessage" xml:space="preserve">
+    <value>Произошла ошибка. Повторите попытку.</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Пользователь</value>
+  </data>
+  <data name="Image" xml:space="preserve">
+    <value>Изображение</value>
+  </data>
+  <data name="Points" xml:space="preserve">
+    <value>точки</value>
+  </data>
+  <data name="MyPrediction" xml:space="preserve">
+    <value>прогноз:</value>
+  </data>
+  <data name="Instructions1" xml:space="preserve">
+    <value>Чтобы играть в «Russia», следуйте инструкциям:</value>
+  </data>
+  <data name="Instructions2" xml:space="preserve">
+    <value>1. В меню «Картоны» купите одну или несколько картонных коробок.</value>
+  </data>
+  <data name="Instructions3" xml:space="preserve">
+    <value>2. Введите прогнозы каждого матча. Вы можете ввести предсказание перед началом каждой игры. Если вы угадаете точный результат, вы заработаете 3 балла. Если вы угадаете победителя или связали с другим результатом, вы заработаете 1 очко.</value>
+  </data>
+  <data name="Instructions4" xml:space="preserve">
+    <value>Пример: если для матча между Колумбией и Японией вы делаете 2-1, и эффективно этот результат дается, вы выигрываете 3 очка. Если Колумбия выиграет другим результатом, например: 1-0, 2-0, 3-1 или другой, вы выиграете 1 очко. Но если Колумбия связывает или теряет, вы не зарабатываете очки.</value>
+  </data>
+  <data name="NotImplement" xml:space="preserve">
+    <value>Опция еще не реализована. Скоро в следующей версии!</value>
+  </data>
+  <data name="Instructions6" xml:space="preserve">
+    <value>В удаленном случае, когда два или более пользователей имеют одинаковый балл. Премия будет распределяться среди всех победителей.</value>
+  </data>
+  <data name="PleaseWait" xml:space="preserve">
+    <value>Подождите...</value>
+  </data>
+  <data name="UserAlreadyExists" xml:space="preserve">
+    <value>Пользователь с таким email не существует.</value>
+  </data>
+  <data name="RegisterUserError" xml:space="preserve">
+    <value>Страница никак не создается. Попробуйте еще раз.</value>
+  </data>
+  <data name="PasswordRetrieve" xml:space="preserve">
+    <value>Восстановить пароль!</value>
+  </data>
+  <data name="PasswordRetrieveExplanation" xml:space="preserve">
+    <value>Введите новый пароль</value>
+  </data>
+  <data name="SendNewPassword" xml:space="preserve">
+    <value>Новый пароль</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Подтверждение</value>
+  </data>
+  <data name="NewPasswordSent" xml:space="preserve">
+    <value>Новый пароль отправлен на ваш адрес эл. почты</value>
+  </data>
+  <data name="Instructions41" xml:space="preserve">
+    <value>Примечание: в случае игр, которые определяются штрафами, прогноз делается только для обычного игрового времени. Я хочу сказать перед штрафами.</value>
+  </data>
+  <data name="ChangePasswordInstructions" xml:space="preserve">
+    <value>Для вашей безопасности вы должны выйти и войти в приложение перед сменой пароля.</value>
+  </data>
+  <data name="SocialNetworksLogin" xml:space="preserve">
+    <value>Или войти с...</value>
+  </data>
+  <data name="CupProgramming" xml:space="preserve">
+    <value>Программирование чашек</value>
+  </data>
+  <data name="PendingMatches" xml:space="preserve">
+    <value>Ожидаемые матчи</value>
+  </data>
+  <data name="PastMatches" xml:space="preserve">
+    <value>Сыгранные матчи</value>
+  </data>
+  <data name="EnterAsAGuest" xml:space="preserve">
+    <value>Войти как гость</value>
+  </data>
+  <data name="Invited" xml:space="preserve">
+    <value>Приглашен</value>
+  </data>
+  <data name="GuestValidation" xml:space="preserve">
+    <value>Вы вошли как гость, чтобы получить доступ к этой опции, вам необходимо зарегистрироваться и получить доступ к приложению.</value>
+  </data>
+  <data name="MatchAboutToFinish" xml:space="preserve">
+    <value>собирается закрыть предсказания, и вы еще не вошли в свою.</value>
+  </data>
+  <data name="PredictionsCloseMatches" xml:space="preserve">
+    <value>Прогнозы закрытых матчей</value>
+  </data>
+  <data name="ClosePredictions" xml:space="preserve">
+    <value>Вы закрыли свои прогнозы, вы можете увидеть прогнозы всех пользователей в меню:</value>
+  </data>
+  <data name="SelectMatch" xml:space="preserve">
+    <value>Выберите матч ...</value>
+  </data>
+  <data name="LocalGoals" xml:space="preserve">
+    <value>Mестных</value>
+  </data>
+  <data name="VisitorGoals" xml:space="preserve">
+    <value>Nосетителя</value>
+  </data>
+  <data name="Points3" xml:space="preserve">
+    <value>Закончено, поздравляю! вы выиграли 3 очка</value>
+  </data>
+  <data name="Points1" xml:space="preserve">
+    <value>Закончено, поздравляю! Вы набрали 1 очко</value>
+  </data>
+  <data name="Points0" xml:space="preserve">
+    <value>Все кончено, извините, вы не заработали очки</value>
+  </data>
+  <data name="Prize" xml:space="preserve">
+    <value>Тип приза</value>
+  </data>
+  <data name="NoPredictionsClose" xml:space="preserve">
+    <value>Нет закрытых прогнозов. Вернитесь к этому варианту, когда начинается турнир.</value>
+  </data>
+  <data name="BoardInstructions" xml:space="preserve">
+    <value>Для участия вы должны приобрести карты</value>
+  </data>
+  <data name="DepositConfirmationMessage" xml:space="preserve">
+    <value>Был получен образ его картона. Когда администратор проверит его в течение 24 часов, он включит свой картон для ввода прогнозов.</value>
+  </data>
+  <data name="EMail" xml:space="preserve">
+    <value>EMail</value>
+  </data>
+  <data name="Instructions5" xml:space="preserve">
+    <value>3. Выиграйте больше очков, накопленных во всем турнире. Вы можете проверить свою позицию в меню «Классификация».</value>
+  </data>
+  <data name="AddBoardInstructions" xml:space="preserve">
+    <value>Вы должны приобрести хотя бы одну карту для участия.</value>
+  </data>
+</root>
