@@ -6,6 +6,8 @@
     using Views;
     using Xamarin.Forms;
     using Helpers;
+    using RussiaX.Models;
+    using System;
 
     public class LoginViewModel : BaseViewModel
     {
@@ -162,10 +164,11 @@
                 this.Email);
 
             user.Password = this.Password;
+            var userLocal = Transform.ToUserLocal(user);
 
             var mainViewModel = MainViewModel.GetInstance();
             mainViewModel.Token = token;
-            mainViewModel.User = user;
+            mainViewModel.User = userLocal;
 
             if (this.IsRemembered)
             {
@@ -176,7 +179,7 @@
                 Settings.IsRemembered = "false";
             }
 
-            this.dataService.DeleteAllAndInsert(user);
+            this.dataService.DeleteAllAndInsert(userLocal);
             this.dataService.DeleteAllAndInsert(token);
 
             await Application.Current.MainPage.DisplayAlert("Fuck Yeak!", "You're in", "Accetp");

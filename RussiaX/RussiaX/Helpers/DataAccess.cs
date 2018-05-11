@@ -20,7 +20,7 @@
             this.connection = new SQLiteConnection(
                 config.Platform,
                 Path.Combine(config.DirectoryDB, "Russia.db3"));
-            connection.CreateTable<User>();
+            connection.CreateTable<UserLocal>();
             connection.CreateTable<TokenResponse>();
         }
 

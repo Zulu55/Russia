@@ -8,7 +8,7 @@
     public class MainViewModel : BaseViewModel
     {
         #region Attibrutes
-        private User user;
+        private UserLocal user;
         #endregion
 
         #region Properties
@@ -24,7 +24,7 @@
             set;
         }
 
-        public User User
+        public UserLocal User
         {
             get { return this.user; }
             set { SetValue(ref this.user, value); }
@@ -47,7 +47,6 @@
             this.LoadMenu();
         }
         #endregion
-
 
         #region Singleton
         private static MainViewModel instance;

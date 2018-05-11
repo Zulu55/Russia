@@ -37,7 +37,7 @@
 
                 if (token != null && token.Expires > DateTime.Now)
                 {
-                    var user = dataService.First<User>(false);
+                    var user = dataService.First<UserLocal>(false);
                     var mainViewModel = MainViewModel.GetInstance();
                     mainViewModel.Token = token;
                     mainViewModel.User = user;
@@ -98,15 +98,18 @@
                 token.AccessToken,
                 token.UserName);
 
+            UserLocal userLocal = null;   
+
             if (user != null)
             {
-                dataService.DeleteAllAndInsert(user);
+                userLocal = Transform.ToUserLocal(user);
+                dataService.DeleteAllAndInsert(userLocal);
                 dataService.DeleteAllAndInsert(token);
             }
 
             var mainViewModel = MainViewModel.GetInstance();
             mainViewModel.Token = token;
-            mainViewModel.User = user;
+            mainViewModel.User = userLocal;
             //mainViewModel.Lands = new LandsViewModel();
             //Application.Current.MainPage = new MasterPage();
             Settings.IsRemembered = "true";
