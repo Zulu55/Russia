@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:i18n="clr-namespace:RussiaX.Helpers"
+    x:Class="RussiaX.Views.MatchesPage"
+    BackgroundColor="Silver"
+    BindingContext="{Binding Main, Source={StaticResource Locator}}"
+    Title="{i18n:Translate Matches}">
+    <ContentPage.Content>
+        <StackLayout
+            BindingContext="{Binding Matches}"
+            Padding="5">
+            <SearchBar
+                HeightRequest="46"
+                Text="{Binding Filter, Mode=TwoWay}"
+                Placeholder="{i18n:Translate Search}"
+                SearchCommand="{Binding SearchCommand}">
+            </SearchBar>
+            <ListView 
+                BackgroundColor="Transparent"
+                HasUnevenRows="true" 
+                IsPullToRefreshEnabled="true"
+                IsRefreshing="{Binding IsRefreshing, Mode=TwoWay}"
+                ItemsSource="{Binding Matches}"
+                SeparatorVisibility="Default"
+                SeparatorColor="Navy"
+                RefreshCommand="{Binding RefreshCommand}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout
+                                Margin="0,3">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <StackLayout
+                                        Grid.Column="0"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center">
+                                        <Image
+                                            HeightRequest="50"
+                                            Source="{Binding Local.ImageFullPath}"
+                                            WidthRequest="100">
+                                        </Image>
+                                        <Label
+                                            HorizontalOptions="Center"
+                                            Text="{Binding Local.Name}"
+                                            TextColor="Black">
+                                        </Label>
+                                    </StackLayout>
+                                    <Entry
+                                        Grid.Column="1"
+                                        BackgroundColor="White"
+                                        FontAttributes="Bold"
+                                        FontSize="24"
+                                        HorizontalOptions="Center"
+                                        HorizontalTextAlignment="Center"
+                                        IsEnabled="false"
+                                        Text="{Binding LocalGoals}"
+                                        TextColor="Black"
+                                        VerticalOptions="Center"
+                                        WidthRequest="40">
+                                    </Entry>
+                                    <Label
+                                        Grid.Column="2"
+                                        HorizontalOptions="Center"
+                                        FontAttributes="Bold"
+                                        Text="Vs."
+                                        TextColor="Red"
+                                        VerticalOptions="Center">
+                                    </Label>
+                                    <Entry
+                                        Grid.Column="3"
+                                        BackgroundColor="White"
+                                        FontAttributes="Bold"
+                                        FontSize="24"
+                                        HorizontalOptions="Center"
+                                        HorizontalTextAlignment="Center"
+                                        IsEnabled="false"
+                                        Text="{Binding VisitorGoals}"
+                                        TextColor="Black"
+                                        VerticalOptions="Center"
+                                        WidthRequest="40">
+                                    </Entry>
+                                    <StackLayout
+                                        Grid.Column="4"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center">
+                                        <Image
+                                            HeightRequest="50"
+                                            Source="{Binding Visitor.ImageFullPath}"
+                                            WidthRequest="100">
+                                        </Image>
+                                        <Label
+                                            HorizontalOptions="Center"
+                                            Text="{Binding Visitor.Name}"
+                                            TextColor="Black">
+                                        </Label>
+                                    </StackLayout>
+                                </Grid>
+                                <Label
+                                    HorizontalOptions="Center"
+                                    Text="{Binding DateTime, StringFormat='{0:yyyy/MM/dd HH:mm}'}"
+                                    TextColor="Black">
+                                </Label>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

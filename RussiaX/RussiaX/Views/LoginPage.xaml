@@ -16,8 +16,8 @@
                     AbsoluteLayout.LayoutFlags="All"
                     Padding="5">
                     <Image
-                    Source="Russia2018"
-                    WidthRequest="200">
+                        Source="Russia2018"
+                        WidthRequest="200">
                     </Image>
                     <Grid
                     Margin="10,0"

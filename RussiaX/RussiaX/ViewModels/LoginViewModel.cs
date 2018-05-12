@@ -162,27 +162,19 @@
                 this.Email);
 
             user.Password = this.Password;
+            var userLocal = Transform.ToUserLocal(user);
 
             var mainViewModel = MainViewModel.GetInstance();
             mainViewModel.Token = token;
-            mainViewModel.User = user;
+            mainViewModel.User = userLocal;
 
-            if (this.IsRemembered)
-            {
-                Settings.IsRemembered = "true";
-            }
-            else
-            {
-                Settings.IsRemembered = "false";
-            }
+            Settings.IsRemembered = this.IsRemembered.ToString();
 
-            this.dataService.DeleteAllAndInsert(user);
+            this.dataService.DeleteAllAndInsert(userLocal);
             this.dataService.DeleteAllAndInsert(token);
 
-            await Application.Current.MainPage.DisplayAlert("Fuck Yeak!", "You're in", "Accetp");
-
-            //mainViewModel.Lands = new LandsViewModel();
-            //Application.Current.MainPage = new MasterPage();
+            mainViewModel.Matches = new MatchesViewModel();
+            Application.Current.MainPage = new MasterPage();
 
             this.IsRunning = false;
             this.IsEnabled = true;

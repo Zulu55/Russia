@@ -1,6 +1,5 @@
 ﻿namespace RussiaX.ViewModels
 {
-    using System.Collections.Generic;
     using System.Collections.ObjectModel;
     using Helpers;
     using Models;
@@ -8,7 +7,7 @@
     public class MainViewModel : BaseViewModel
     {
         #region Attibrutes
-        private User user;
+        private UserLocal user;
         #endregion
 
         #region Properties
@@ -24,7 +23,7 @@
             set;
         }
 
-        public User User
+        public UserLocal User
         {
             get { return this.user; }
             set { SetValue(ref this.user, value); }
@@ -32,11 +31,9 @@
         #endregion
 
         #region ViewModels
-        public LoginViewModel Login
-        {
-            get;
-            set;
-        }
+        public LoginViewModel Login { get; set; }
+
+        public MatchesViewModel Matches { get; set; }
         #endregion
 
         #region Constructors
@@ -47,7 +44,6 @@
             this.LoadMenu();
         }
         #endregion
-
 
         #region Singleton
         private static MainViewModel instance;

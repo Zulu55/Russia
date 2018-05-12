@@ -10,20 +10,7 @@
 
         public string ImagePath { get; set; }
 
-        public string ImageFullPath
-        {
-            get
-            {
-                if (string.IsNullOrEmpty(ImagePath))
-                {
-                    return "noimage_team";
-                }
-
-                return string.Format(
-                    "https://russiabackend.azurewebsites.net{0}",
-                    ImagePath.Substring(1));
-            }
-        }
+        public string ImageFullPath { get; set; }
 
         public List<GroupTeam> GroupTeams { get; set; }
 

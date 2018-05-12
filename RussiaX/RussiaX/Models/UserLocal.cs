@@ -1,9 +1,10 @@
 ﻿namespace RussiaX.Models
 {
-    using System.Collections.Generic;
+    using SQLite.Net.Attributes;
 
-    public class User
+    public class UserLocal
     {
+        [PrimaryKey]
         public int UserId { get; set; }
 
         public string FirstName { get; set; }
@@ -17,8 +18,6 @@
         public string ImagePath { get; set; }
 
         public int UserTypeId { get; set; }
-
-        public UserType UserType { get; set; }
 
         public byte[] ImageArray { get; set; }
 
@@ -52,8 +51,9 @@
             }
         }
 
-        public List<Board> Boards { get; set; }
-
-        public List<Prediction> Predictions { get; set; }
+        public override int GetHashCode()
+        {
+            return UserId;
+        }
     }
 }

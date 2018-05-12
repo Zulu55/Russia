@@ -12,17 +12,9 @@
     public partial class App : Application
 	{
         #region Properties
-        public static NavigationPage Navigator
-        {
-            get;
-            internal set;
-        }
+        public static NavigationPage Navigator { get; internal set; }
 
-        //public static MasterPage Master
-        //{
-        //    get;
-        //    internal set;
-        //}
+        public static MasterPage Master { get; internal set; }
         #endregion
 
         #region Constructors
@@ -37,12 +29,12 @@
 
                 if (token != null && token.Expires > DateTime.Now)
                 {
-                    var user = dataService.First<User>(false);
+                    var user = dataService.First<UserLocal>(false);
                     var mainViewModel = MainViewModel.GetInstance();
                     mainViewModel.Token = token;
                     mainViewModel.User = user;
-                    //mainViewModel.Lands = new LandsViewModel();
-                    //Application.Current.MainPage = new MasterPage();
+                    mainViewModel.Matches = new MatchesViewModel();
+                    Application.Current.MainPage = new MasterPage();
                 }
                 else
                 {
@@ -98,15 +90,18 @@
                 token.AccessToken,
                 token.UserName);
 
+            UserLocal userLocal = null;
+
             if (user != null)
             {
-                dataService.DeleteAllAndInsert(user);
+                userLocal = Transform.ToUserLocal(user);
+                dataService.DeleteAllAndInsert(userLocal);
                 dataService.DeleteAllAndInsert(token);
             }
 
             var mainViewModel = MainViewModel.GetInstance();
             mainViewModel.Token = token;
-            mainViewModel.User = user;
+            mainViewModel.User = userLocal;
             //mainViewModel.Lands = new LandsViewModel();
             //Application.Current.MainPage = new MasterPage();
             Settings.IsRemembered = "true";
